@@ -112,23 +112,20 @@
                         </div>
                     </div>
                 </form>
-                <form action="action_page.php">
-                     <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name">
-                     <label for="myfile">Select a file:</label>
-                     <input type="file" id="myfile" name="myfile"><br><br>
-                     <div class="col-md-auto col-12 mbr-section-btn">
-                            <button type="submit" class="btn btn-black display-4">Submit</button>
-                        </div>
+               <form action="http://jkorpela.fi/cgi-bin/echo.cgi"
+enctype="multipart/form-data" method="post">
+<p>
+Type some text (if you like):<br>
+<input type="text" name="textline" size="30">
+</p>
+<p>
+Please specify a file, or a set of files:<br>
+<input type="file" name="datafile" size="40">
+</p>
+<div>
+<input type="submit" value="Send">
+</div>
 </form>
-              <form action="/upload.php" method="post" enctype="multipart/form-data">
-  Select image to upload:
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="submit" value="Upload Image" name="submit">
-</form>
-               <label> Choose the File to upload: </label>
-    <input type="file" id="myFile" /> <br /><br />
-     
-    <input type="submit" value="submit" />
             </div>
             <div class="col-lg-7 col-12">
                 <div class="image-wrapper">
